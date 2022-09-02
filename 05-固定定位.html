@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>固定定位</title>
+    <style>
+        /* 固定定位的特点：（务必记住）
+        1. 以浏览器的可视窗口为参照点移动元素。
+         跟父元素没有任何关系
+         不随滚动条滚动。
+        2. 固定定位不在占有原先的位置。
+        固定定位也是脱标的，其实固定定位也可以看做是一种特殊的绝对定位。 */
+        body {
+            height: 3000px;
+        }
+
+        .dj {
+            position: fixed;
+            top: 100px;
+            left: 40px;
+        }
+
+        .box {
+            width: 200px;
+            height: 2000px;
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+    <div class="dj">
+        <img src="images/pvp.png" alt="dj">
+    </div>
+</body>
+
+</html>
